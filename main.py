@@ -27,7 +27,16 @@ def c():
     return d(doubles)
 
 def d():
-    pass
+    not_doubles = []
+    for k, v in dict.items(doubles):
+        if v == 1:
+            not_doubles.append(k)
+    for item in not_doubles:
+        del doubles[item]
+    if doubles == {}:
+        print('Дубликатов не найдено')
+    else:
+        print(doubles)
 
 #точка ввода
 print('/T\\')
