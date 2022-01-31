@@ -1,4 +1,4 @@
-#import os
+import os
 
 d = {}
 def a():
@@ -15,8 +15,7 @@ def d():
 
 #точка ввода
 print('/T\\')
-print('|.|  Привет я точка в'
-      '[входа, напиши "start" чтобы начать')
+print('|.|  Привет я точка входа, напиши "start" чтобы начать')
 while True:
     vhod = input()
     if vhod =="start":
